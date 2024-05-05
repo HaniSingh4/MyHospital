@@ -20,7 +20,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private SearchView searchView;
     private ActivityMainBinding binding;
-    private  list<Item> itemList; // ye new data dalenge tho jaega
+  //  private  list<Item> itemList; // ye new data dalenge tho jaega
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,12 +53,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
     }
+
+    private void fileList(String newText) {
+    }
 // search view code here
     // ye section rest h q ki av data nii dale h
-    private void fileList(String Text) {
+   /* private void fileList(String Text) {
         List<Item> filterList = new ArrayList<>();
         for(Item item : itemList)
         {
-    }
+    }*/
 
 }
